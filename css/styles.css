@@ -1,0 +1,31 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    color: #343a40;
+  }
+  
+  .lead {
+    color: #6c757d;
+  }
+  
+  .endpoint h3 {
+    color: #28a745;
+  }
+  
+  pre {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  code {
+    background-color: #f1f1f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 2px 0;
+  }
+  

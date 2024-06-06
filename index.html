@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Documentation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">NutriScan API Story</h1>
+    <p class="lead">API untuk berbagi endpoint.</p>
+    <hr>
+    <h2>Endpoint</h2>
+    <p><a href="https://nutriscan.io/api" target="_blank">https://nutriscan.io/api</a></p>
+    <div class="endpoint mt-4">
+      <h3>Predict</h3>
+      <p><strong>URL</strong><br>
+      <code>/predict</code></p>
+      <p><strong>Method</strong><br>
+      <code>POST</code></p>
+      <p><strong>Request Body</strong><br>
+      <code>image</code> as <code>base64code</code><br>
+      <p><strong>Response</strong></p>
+      <pre><code class="json">
+        {
+          "status": 200,
+          "message": "success",
+          "data": {
+                "name": "nasi goreng",
+                "desc": "Nasi goreng enak",
+                "carbo": "120",
+                "protein": "20gr",
+                "calory": "390 kkal",
+                "lemak": "100",
+                "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+            }
+        }
+      </code></pre>
+    </div>
+    <div class="endpoint mt-4">
+      <h3>List</h3>
+      <p><strong>URL</strong><br>
+      <code>/list</code></p>
+      <p><strong>Method</strong><br>
+      <code>GET</code></p>
+      <p><strong>Request Body</strong><br>
+      <code>None</code><br>
+      <p><strong>Response</strong></p>
+      <pre><code class="json">
+{
+  "status": 200,
+  "message": "success",
+  "data": [
+                {
+                    "name": "nasi goreng",
+                    "desc": "Nasi goreng enak",
+                    "carbo": "120",
+                    "protein": "20gr",
+                    "calory": "390 kkal",
+                    "lemak": "100",
+                    "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+                },
+                {
+                    "name": "cap cay",
+                    "desc": "Nasi goreng enak",
+                    "carbo": "120",
+                    "protein": "20gr",
+                    "calory": "390 kkal",
+                    "lemak": "100",
+                    "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+                },
+                {
+                    "name": "nasi padang",
+                    "desc": "Nasi goreng enak",
+                    "carbo": "120",
+                    "protein": "20gr",
+                    "calory": "390 kkal",
+                    "lemak": "100",
+                    "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+                },
+                {
+                    "name": "mie goreng",
+                    "desc": "Nasi goreng enak",
+                    "carbo": "120",
+                    "protein": "20gr",
+                    "calory": "390 kkal",
+                    "lemak": "100",
+                    "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+                },
+                {
+                    "name": "kwetiwau",
+                    "desc": "Nasi goreng enak",
+                    "carbo": "120",
+                    "protein": "20gr",
+                    "calory": "390 kkal",
+                    "lemak": "100",
+                    "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+                },
+                {
+                    "name": "ayam bakar",
+                    "desc": "Nasi goreng enak",
+                    "carbo": "120",
+                    "protein": "20gr",
+                    "calory": "390 kkal",
+                    "lemak": "100",
+                    "bahan": "bawang merah, bawang putih, nasi, kecap, telur",
+                },
+    ]
+}
+      </code></pre>
+    </div>
+    <!-- Tambahkan endpoint lain sesuai kebutuhan -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
